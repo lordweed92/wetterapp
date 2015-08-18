@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		D03F99461B83532300CF26E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F99451B83532300CF26E7 /* main.m */; };
 		D03F99491B83532300CF26E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F99481B83532300CF26E7 /* AppDelegate.m */; };
-		D03F994C1B83532300CF26E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F994B1B83532300CF26E7 /* ViewController.m */; };
 		D03F994F1B83532300CF26E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03F994D1B83532300CF26E7 /* Main.storyboard */; };
 		D03F99511B83532300CF26E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03F99501B83532300CF26E7 /* Assets.xcassets */; };
 		D03F99541B83532300CF26E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03F99521B83532300CF26E7 /* LaunchScreen.storyboard */; };
 		D03F995F1B83532300CF26E7 /* WetterappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F995E1B83532300CF26E7 /* WetterappTests.m */; };
 		D03F996A1B83532300CF26E7 /* WetterappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F99691B83532300CF26E7 /* WetterappUITests.m */; };
+		D03F99791B8355AB00CF26E7 /* CitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F99781B8355AB00CF26E7 /* CitiesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		D03F99451B83532300CF26E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D03F99471B83532300CF26E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D03F99481B83532300CF26E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D03F994A1B83532300CF26E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D03F994B1B83532300CF26E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D03F994E1B83532300CF26E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D03F99501B83532300CF26E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03F99531B83532300CF26E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		D03F99651B83532300CF26E7 /* WetterappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetterappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03F99691B83532300CF26E7 /* WetterappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WetterappUITests.m; sourceTree = "<group>"; };
 		D03F996B1B83532300CF26E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03F99771B8355AB00CF26E7 /* CitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesTableViewController.h; sourceTree = "<group>"; };
+		D03F99781B8355AB00CF26E7 /* CitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +103,9 @@
 			children = (
 				D03F99471B83532300CF26E7 /* AppDelegate.h */,
 				D03F99481B83532300CF26E7 /* AppDelegate.m */,
-				D03F994A1B83532300CF26E7 /* ViewController.h */,
-				D03F994B1B83532300CF26E7 /* ViewController.m */,
 				D03F994D1B83532300CF26E7 /* Main.storyboard */,
+				D03F99771B8355AB00CF26E7 /* CitiesTableViewController.h */,
+				D03F99781B8355AB00CF26E7 /* CitiesTableViewController.m */,
 				D03F99501B83532300CF26E7 /* Assets.xcassets */,
 				D03F99521B83532300CF26E7 /* LaunchScreen.storyboard */,
 				D03F99551B83532300CF26E7 /* Info.plist */,
@@ -270,9 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03F994C1B83532300CF26E7 /* ViewController.m in Sources */,
 				D03F99491B83532300CF26E7 /* AppDelegate.m in Sources */,
 				D03F99461B83532300CF26E7 /* main.m in Sources */,
+				D03F99791B8355AB00CF26E7 /* CitiesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
