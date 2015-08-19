@@ -7,6 +7,7 @@
 //
 
 #import "CitiesTableViewController.h"
+#import "DetailViewController.h"
 
 @interface CitiesTableViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"Derbe Städte";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,24 +34,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 1000;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cityCell" forIndexPath:indexPath];
     
+    NSInteger row = indexPath.row;
+    cell.textLabel.text = [NSString stringWithFormat:@"Stadt %ld", row];
+    cell.detailTextLabel.text = @"28C";
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -85,14 +87,17 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+     //Get the new view controller using [segue destinationViewController].
+     //Pass the selected object to the new view controller.
+    if( [segue.identifier isEqualToString:@"seg1"]){
+        
+        [(DetailViewController*)segue.destinationViewController setDetail: [NSString stringWithFormat:@"Stadt %ld", self.tableView.indexPathForSelectedRow.row]];
+    }
 }
-*/
+
 
 @end

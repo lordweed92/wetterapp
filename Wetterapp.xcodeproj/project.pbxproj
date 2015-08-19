@@ -15,6 +15,7 @@
 		D03F995F1B83532300CF26E7 /* WetterappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F995E1B83532300CF26E7 /* WetterappTests.m */; };
 		D03F996A1B83532300CF26E7 /* WetterappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F99691B83532300CF26E7 /* WetterappUITests.m */; };
 		D03F99791B8355AB00CF26E7 /* CitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F99781B8355AB00CF26E7 /* CitiesTableViewController.m */; };
+		D047765A1B83667200339BBA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04776591B83667200339BBA /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D03F996B1B83532300CF26E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03F99771B8355AB00CF26E7 /* CitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesTableViewController.h; sourceTree = "<group>"; };
 		D03F99781B8355AB00CF26E7 /* CitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesTableViewController.m; sourceTree = "<group>"; };
+		D04776581B83667200339BBA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D04776591B83667200339BBA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				D03F994D1B83532300CF26E7 /* Main.storyboard */,
 				D03F99771B8355AB00CF26E7 /* CitiesTableViewController.h */,
 				D03F99781B8355AB00CF26E7 /* CitiesTableViewController.m */,
+				D04776581B83667200339BBA /* DetailViewController.h */,
+				D04776591B83667200339BBA /* DetailViewController.m */,
 				D03F99501B83532300CF26E7 /* Assets.xcassets */,
 				D03F99521B83532300CF26E7 /* LaunchScreen.storyboard */,
 				D03F99551B83532300CF26E7 /* Info.plist */,
@@ -273,6 +278,7 @@
 				D03F99491B83532300CF26E7 /* AppDelegate.m in Sources */,
 				D03F99461B83532300CF26E7 /* main.m in Sources */,
 				D03F99791B8355AB00CF26E7 /* CitiesTableViewController.m in Sources */,
+				D047765A1B83667200339BBA /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +502,7 @@
 				D03F99701B83532300CF26E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D03F99711B83532300CF26E7 /* Build configuration list for PBXNativeTarget "WetterappTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				D03F99731B83532300CF26E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D03F99741B83532300CF26E7 /* Build configuration list for PBXNativeTarget "WetterappUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				D03F99761B83532300CF26E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
